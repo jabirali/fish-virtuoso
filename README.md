@@ -1,7 +1,8 @@
 # Fish Virtuoso
 
 This plugin tries to optimize how `fish` interacts with `nvim` and `tmux`,
-with fallback functionality for when you need to use `vim` or `vi`.
+in a way that is backwards-compatible with `vim` and `vi`. The plugin
+is perhaps especially interesting for people who use `nvr`.
 
 ## Motivation
 
@@ -14,8 +15,8 @@ If you want the following functionality, then this plugin is for you:
 - Provide the same editing commands in the shell as in `vim` command mode.
   In other words, the commands `edit`, `split`, `vsplit`, and `tabedit`
   (and their abbreviations `e`, `sp`, `vs`, `tabe`) should do the same 
-  thing as the corresponding commands in `vim`. If your `$EDITOR` is 
-  `nvr`, these actions may be performed in an existing `nvim` instance.
+  thing in `fish` and `vim`. If your `$EDITOR` is `nvr`, these actions
+  are performed in an existing `nvim` instance.
 - Integrate the excellent [NeoVim Remote][1] with `tmux`. The assumption 
   here is that if you use `nvr` as your `$EDITOR` within `tmux`, you only 
   want *one* `nvim` instance per `tmux` session and window. Thus, typing
@@ -38,3 +39,9 @@ Restart `fish`, and everything should work by itself.
 If it doesn't, feel free to open an issue on Github!
 
 [2]: https://github.com/jorgebucaran/fisher
+
+## Acknowledgements 
+
+The `nvr` integration is strongly inspired by [this thread][3] on Reddit.
+
+[3]: https://www.reddit.com/r/neovim/comments/aex45u/integrating_nvr_and_tmux_to_use_a_single_tmux_per/
