@@ -1,8 +1,8 @@
 # Fish Virtuoso
 
-This plugin tries to optimize how `fish` interacts with `nvim` and `tmux`,
+This plugin optimizes how `fish` interacts with `nvim` and `tmux`,
 in a way that is backwards-compatible with `vim` and `vi`. The plugin
-is perhaps especially interesting for people who use `nvr`.
+is perhaps especially interesting for people who use `nvr` + `tmux`.
 
 ## Motivation
 
