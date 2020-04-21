@@ -1,6 +1,6 @@
 # Autoselect the best $EDITOR {{{
 	if type -q nvr
-		if [ -n "$TMUX" ]
+		if [ -n "$TMUX" ] || [ -n "$NVIM_LISTEN_ADDRESS" ]
 			set -x EDITOR nvr
 		else
 			set -x EDITOR nvim
