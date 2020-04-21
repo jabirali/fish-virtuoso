@@ -19,19 +19,19 @@
 		# When the $EDITOR is set to `nvr`, we can define different functions 
 		# for accessing a file via `:edit`, `:split`, `:vsplit`, and `:tabedit`.
 		function edit -w nvr
-			nvr $argv 2> /dev/null
+			nvr $argv
 		end
 		
 		function split -w nvr
-			nvr -cc split $argv 2> /dev/null
+			nvr -cc split $argv
 		end
 		
 		function vsplit -w nvr
-			nvr -cc vsplit $argv 2> /dev/null
+			nvr -cc vsplit $argv 
 		end
 		
 		function tabedit -w nvr
-			nvr -cc tabedit $argv 2> /dev/null
+			nvr -cc tabedit $argv 
 		end
 	else
 		# When the $EDITOR is not `nvr`, the best we can do is to is to open the
