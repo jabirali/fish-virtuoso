@@ -12,16 +12,18 @@ If you want the following functionality, then this plugin is for you:
   I realize that "best" is very subjective, but in my opinion the order
   should be `nvr`, `nvim`, `vim`, `vi`. The options to the left are used 
   if available, but more hosts are likely to have the ones on the right.
+  Due to the how the `nvr` integration is done, this is only chosen as
+  your `$EDITOR` if you start `fish` inside either `nvim` or `tmux`.  
 - Provide the same editing commands in the shell as in `vim` command mode.
   In other words, the commands `edit`, `split`, `vsplit`, and `tabedit`
   (and their abbreviations `e`, `sp`, `vs`, `tabe`) should do the same 
   thing in `fish` and `vim`. If your `$EDITOR` is `nvr`, these actions
   are performed in an existing `nvim` instance.
-- Integrate the excellent [NeoVim Remote][1] with `tmux`. The assumption 
-  here is that if you use `nvr` as your `$EDITOR` within `tmux`, you only 
-  want *one* `nvim` instance per `tmux` session and window. Thus, typing
-  `split /etc/fstab` in a `tmux` window that has an `nvim` instance visible
-  will open the file `/etc/fstab` in a new `:split` in that `nvim` instance.
+- Integrate the excellent [NeoVim Remote][1] in a smart way. If you use
+  `nvr` within the built-in terminal of `nvim`, this means that the 
+  surrounding `nvim` is used. If you run `nvr` inside `tmux`, the
+  assumption is that you only want one `nvim` instance per `tmux` window,
+  so the currently visible `nvim` instance in your `tmux` window is reused.
 - To help you start typing `e` or `edit` instead of `nvr`/`nvim`/`vim`/`vi`,
   since the latter are inherently less portable, I have also added some
   abbreviations that help with the transition. If anyone is offended by
