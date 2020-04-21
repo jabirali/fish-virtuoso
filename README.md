@@ -9,11 +9,11 @@ is perhaps especially interesting for people who use `nvr`.
 If you want the following functionality, then this plugin is for you:
 
 - Automatically select the best available `$EDITOR` when `fish` starts.
-  I realize that "best" is very subjective, but in my opinion the order
+  I realize that "best" is subjective, but in my opinion the order
   should be `nvr`, `nvim`, `vim`, `vi`. The options to the left are used 
   if available, but more hosts have the ones to the right. Due to the how
   the integration is done, `nvr` is only chosen as `$EDITOR` if you start
-  `fish` inside either `nvim` or `tmux`.  
+  `fish` inside `nvim` or `tmux`.  
 - Provide the same editing commands in the shell as in `vim` command mode.
   In other words, the commands `edit`, `split`, `vsplit`, and `tabedit`
   (and their abbreviations `e`, `sp`, `vs`, `tabe`) should do the same 
