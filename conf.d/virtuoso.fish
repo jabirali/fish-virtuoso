@@ -27,11 +27,11 @@
 		end
 		
 		function vsplit -w nvr
-			nvr -cc split $argv 2> /dev/null
+			nvr -cc vsplit $argv 2> /dev/null
 		end
 		
 		function tabedit -w nvr
-			nvr -cc split $argv 2> /dev/null
+			nvr -cc tabedit $argv 2> /dev/null
 		end
 	else
 		# When the $EDITOR is not `nvr`, the best we can do is to is to open the
