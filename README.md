@@ -11,9 +11,9 @@ If you want the following functionality, then this plugin is for you:
 - Automatically select the best available `$EDITOR` when `fish` starts.
   I realize that "best" is very subjective, but in my opinion the order
   should be `nvr`, `nvim`, `vim`, `vi`. The options to the left are used 
-  if available, but more hosts are likely to have the ones on the right.
-  Due to the how the `nvr` integration is done, this is only chosen as
-  your `$EDITOR` if you start `fish` inside either `nvim` or `tmux`.  
+  if available, but more hosts have the ones to the right. Due to the how
+  the integration is done, `nvr` is only chosen as `$EDITOR` if you start
+  `fish` inside either `nvim` or `tmux`.  
 - Provide the same editing commands in the shell as in `vim` command mode.
   In other words, the commands `edit`, `split`, `vsplit`, and `tabedit`
   (and their abbreviations `e`, `sp`, `vs`, `tabe`) should do the same 
@@ -25,9 +25,8 @@ If you want the following functionality, then this plugin is for you:
   assumption is that you only want one `nvim` instance per `tmux` window,
   so the currently visible `nvim` instance in your `tmux` window is reused.
 - To help you start typing `e` or `edit` instead of `nvr`/`nvim`/`vim`/`vi`,
-  since the latter are inherently less portable, I have also added some
-  abbreviations that help with the transition. If anyone is offended by
-  this, please let me know, and I can add an option to disable these...
+  since the latter are less portable, I added some abbreviations that help. 
+  If you dislike this, let me know, and I can add an option to disable them.
 
 [1]: https://github.com/mhinz/neovim-remote
 
