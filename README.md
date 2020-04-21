@@ -19,7 +19,7 @@ If you want the following functionality, then this plugin is for you:
   (and their abbreviations `e`, `sp`, `vs`, `tabe`) should do the same 
   thing in `fish` and `vim`. If your `$EDITOR` is `nvr`, these actions
   are performed in an existing `nvim` instance.
-- Integrate the excellent [NeoVim Remote][1] in a smart way. If you use
+- Integrate the excellent [Neovim Remote][1] in a smart way. If you use
   `nvr` within the built-in terminal of `nvim`, this means that the 
   surrounding `nvim` is used. If you run `nvr` inside `tmux`, the
   assumption is that you only want one `nvim` instance per `tmux` window,
