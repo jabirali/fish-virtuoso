@@ -17,22 +17,22 @@
 # Simplify the use of $EDITOR {{{
 	# Define aliases for interacting with Vim in the same
 	# way from a shell as you would do in "command mode".
-	alias "edit" "$EDITOR"
-	alias "split" "$EDITOR -o"
-	alias "vsplit" "$EDITOR -O"
+	alias "edit"    "$EDITOR"
+	alias "split"   "$EDITOR -o"
+	alias "vsplit"  "$EDITOR -O"
 	alias "tabedit" "$EDITOR -p"
 	
 	# Replicate Vim's abbreviations.
-	abbr -ga e  edit
-	abbr -ga sp split
-	abbr -ga vs vsplit
-	abbr -ga tabe tabedit
+	abbr -ga "e"    "edit"
+	abbr -ga "sp"   "split"
+	abbr -ga "vs"   "vsplit"
+	abbr -ga "tabe" "tabedit"
 	
 	# Force the use of $EDITOR.
-	abbr -ga vi   edit
-	abbr -ga vim  edit
-	abbr -ga nvim edit
-	abbr -ga nvr  edit
+	abbr -ga "vi"   "edit"
+	abbr -ga "vim"  "edit"
+	abbr -ga "nvim" "edit"
+	abbr -ga "nvr"  "edit"
 # }}}
 
 # Integrate Tmux and Neovim {{{
