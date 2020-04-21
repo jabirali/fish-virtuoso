@@ -15,45 +15,14 @@
 # }}}
 
 # Simplify the use of $EDITOR {{{
-	if [ "$EDITOR" = "nvr" ]
-		# When the $EDITOR is set to `nvr`, we can define different functions 
-		# for accessing a file via `:edit`, `:split`, `:vsplit`, and `:tabedit`.
-		function edit -w nvr
-			nvr $argv
-		end
-		
-		function split -w nvr
-			nvr -cc split $argv
-		end
-		
-		function vsplit -w nvr
-			nvr -cc vsplit $argv 
-		end
-		
-		function tabedit -w nvr
-			nvr -cc tabedit $argv 
-		end
-	else
-		# When the $EDITOR is not `nvr`, the best we can do is to is to open the
-		# specified files in a new instance as separate splits, vsplits, or tabs.
-		function edit -w $EDITOR
-			$EDITOR $argv
-		end
-		
-		function split -w $EDITOR
-			$EDITOR -o $argv
-		end
-		
-		function vsplit -w $EDITOR
-			$EDITOR -O $argv
-		end
-		
-		function tabedit -w $EDITOR
-			$EDITOR -p $argv
-		end
-	end
+	# Define aliases for interacting with Vim in the same
+	# way from a shell as you would do in "command mode".
+	alias "edit" "$EDITOR"
+	alias "split" "$EDITOR -o"
+	alias "vsplit" "$EDITOR -O"
+	alias "tabedit" "$EDITOR -p"
 	
-	# Replicate the Vim short-hand commands.
+	# Replicate Vim's abbreviations.
 	abbr -ga e  edit
 	abbr -ga sp split
 	abbr -ga vs vsplit
