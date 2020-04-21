@@ -2,7 +2,7 @@
 
 This plugin optimizes how `fish` interacts with `nvim` and `tmux`,
 in a way that is backwards-compatible with `vim` and `vi`. The plugin
-is perhaps especially interesting for people who use `nvr` + `tmux`.
+provides extra integration for those who use the [Neovim Remote][1].
 
 ## Motivation
 
@@ -38,6 +38,12 @@ The easiest way to install this is using [fisher][2]:
 
 Restart `fish`, and everything should work by itself. 
 If it doesn't, feel free to open an issue on Github!
+
+The plugin works particularly well with the [Neovim Remote][1], both for people 
+who use `nvim` inside `tmux`, and for people who use the built-in `nvim` terminal.
+The easiest way to install this software is to use the Python package manager `pip`:
+
+    pip3 install neovim-remote
 
 [2]: https://github.com/jorgebucaran/fisher
 
