@@ -42,6 +42,14 @@ If it doesn't, feel free to open an issue on Github!
 
 [2]: https://github.com/jorgebucaran/fisher
 
+## Known issues
+
+If you use `nvr` inside `tmux`, and `nvim` is killed in an improper way, you
+may run into issues once you try to restart `nvr` in the same `tmux` window.
+This is because the files `~/.cache/nvim/nvr*` used by the `nvim` session
+will not have been cleaned up properly. If this happens, just remove the
+relevant file, e.g. `~/.cache/nvim/nvr$1@2` for `tmux` session 1 window 2.
+
 ## Acknowledgements 
 
 The `nvr` integration is strongly inspired by [this thread][3] on Reddit.
