@@ -45,6 +45,8 @@ The easiest way to install this software is to use the Python package manager `p
 
     pip3 install neovim-remote
 
+Remember to check that your `pip` install path (e.g. `~/.local/bin`) is in `$PATH`.
+
 [2]: https://github.com/jorgebucaran/fisher
 
 ## Known issues
