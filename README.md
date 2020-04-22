@@ -33,6 +33,17 @@ If you want the following functionality, then this plugin is for you:
 
 [1]: https://github.com/mhinz/neovim-remote
 
+## Screencast
+
+This is what you can expect when you use `nvr` + `tmux`:
+
+[![asciicast](https://asciinema.org/a/yqOVwWjHDjexxrN3UhZKh7OE8.svg)](https://asciinema.org/a/yqOVwWjHDjexxrN3UhZKh7OE8)
+
+A similar experience can be expected with the built-in terminal `:term` in `nvim`.
+When `nvr` or `nvim` is not available, the plugin falls back to `vim` or `vi`. The
+screencast above uses [these dotfiles](https://gitlab.com/jabiro/dotfiles) as well
+as my `tmux` plugin [Tilish](https://github.com/jabirali/tmux-tilish).
+
 ## Quickstart
 
 The easiest way to install this is using [fisher][2]:
