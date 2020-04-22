@@ -49,7 +49,7 @@ screencast uses [these dotfiles][2] with [tmux-tilish][3] and [vim-tmux-navigato
 
 ## Quickstart
 
-The easiest way to install this is using [fisher][2]:
+The easiest way to install this is using [fisher][5]:
 
 	fisher add jabirali/fish-virtuoso
 
@@ -77,6 +77,6 @@ If you're unsure what file to remove, just run `echo $NVIM_LISTEN_ADDRESS`.
 
 ## Acknowledgements 
 
-The `nvr` integration is strongly inspired by [this thread][3] on Reddit.
+The `nvr` integration is strongly inspired by [this thread][6] on Reddit.
 
 [6]: https://www.reddit.com/r/neovim/comments/aex45u/integrating_nvr_and_tmux_to_use_a_single_tmux_per/
