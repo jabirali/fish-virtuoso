@@ -56,6 +56,7 @@ may run into issues once you try to restart `nvr` in the same `tmux` window.
 This is because the files `~/.cache/nvim/nvr*` used by the `nvim` session
 will not have been cleaned up properly. If this happens, just remove the
 relevant file, e.g. `~/.cache/nvim/nvr$1@2` for `tmux` session 1 window 2.
+If you're unsure what file to remove, just run `echo $NVIM_LISTEN_ADDRESS`.
 
 ## Acknowledgements 
 
