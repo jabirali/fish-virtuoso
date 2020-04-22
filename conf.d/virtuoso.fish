@@ -37,7 +37,10 @@
 	# Replicate Vim's abbreviations.
 	abbr -ga "e"    "edit"
 	abbr -ga "sp"   "split"
+	abbr -ga "spl"  "split"
 	abbr -ga "vs"   "vsplit"
+	abbr -ga "vsp"  "vsplit"
+	abbr -ga "vspl" "vsplit"
 	abbr -ga "tabe" "tabedit"
 	
 	# Force the use of $EDITOR.
