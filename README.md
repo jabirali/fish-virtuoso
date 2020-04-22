@@ -41,8 +41,11 @@ This is what you can expect when you use `nvr` + `tmux`:
 
 A similar experience can be expected with the built-in terminal `:term` in `nvim`.
 When `nvr` or `nvim` is not available, the plugin falls back to `vim` or `vi`. The
-screencast above uses [these dotfiles](https://gitlab.com/jabiro/dotfiles) as well
-as my `tmux` plugin [Tilish](https://github.com/jabirali/tmux-tilish).
+screencast uses [these dotfiles][2] with [tmux-tilish][3] and [vim-tmux-navigator][4].
+
+[2]: https://gitlab.com/jabiro/dotfiles
+[3]: https://github.com/jabirali/tmux-tilish
+[4]: https://github.com/christoomey/vim-tmux-navigator
 
 ## Quickstart
 
