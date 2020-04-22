@@ -15,12 +15,24 @@
 # }}}
 
 # Simplify the use of $EDITOR {{{
-	# Define aliases for interacting with Vim in the same
-	# way from a shell as you would do in "command mode".
-	alias "edit"    "$EDITOR"
-	alias "split"   "$EDITOR -o"
-	alias "vsplit"  "$EDITOR -O"
-	alias "tabedit" "$EDITOR -p"
+	# Define aliases for interacting with Vim in the same way from a shell as
+	# you would do in "command mode".  The wrapper function avoids a bug if 
+	# one runs `edit` with no file names (as one could start `nvim`/`vim`).
+	if [ "$EDITOR" = "nvr -s" ]
+		function edit -w nvr
+			if [ -e "$NVIM_LISTEN_ADDRESS" ]
+				nvr $argv
+			else
+				nvim --listen "$NVIM_LISTEN_ADDRESS" $argv
+			end
+		end
+	else
+		alias "edit" "$EDITOR"
+	end
+	
+	alias "split"   "edit -o"
+	alias "vsplit"  "edit -O"
+	alias "tabedit" "edit -p"
 	
 	# Replicate Vim's abbreviations.
 	abbr -ga "e"    "edit"
