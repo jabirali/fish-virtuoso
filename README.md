@@ -1,8 +1,9 @@
 # Fish Virtuoso
 
-This plugin optimizes how `fish` interacts with `nvim` and `tmux`,
-in a way that is backwards-compatible with `vim` and `vi`. The plugin
-provides extra integration for those who use the [Neovim Remote][1].
+This plugin optimizes how `fish` interacts with `nvim` in a way that 
+is backwards-compatible with `vim` and `vi`. The plugin provides extra 
+integration via the [Neovim Remote][1], in a way that should work well
+regardless of whether you prefer the built-in `nvim` terminal or `tmux`.
 
 ## Motivation
 
