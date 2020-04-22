@@ -64,7 +64,7 @@ The easiest way to install this software is to use the Python package manager `p
 
 Remember to check that your `pip` install path (e.g. `~/.local/bin`) is in `$PATH`.
 
-[2]: https://github.com/jorgebucaran/fisher
+[5]: https://github.com/jorgebucaran/fisher
 
 ## Known issues
 
@@ -79,4 +79,4 @@ If you're unsure what file to remove, just run `echo $NVIM_LISTEN_ADDRESS`.
 
 The `nvr` integration is strongly inspired by [this thread][3] on Reddit.
 
-[3]: https://www.reddit.com/r/neovim/comments/aex45u/integrating_nvr_and_tmux_to_use_a_single_tmux_per/
+[6]: https://www.reddit.com/r/neovim/comments/aex45u/integrating_nvr_and_tmux_to_use_a_single_tmux_per/
