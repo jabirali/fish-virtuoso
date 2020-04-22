@@ -25,6 +25,8 @@ If you want the following functionality, then this plugin is for you:
   surrounding `nvim` is used. If you run `nvr` inside `tmux`, the
   assumption is that you only want one `nvim` instance per `tmux` window,
   so the currently visible `nvim` instance in your `tmux` window is reused.
+  Since `$EDITOR` is automatically set to `nvr` when applicable, commands
+  like `git` and `nnn` also reuse these existing editor windows.
 - To help you start typing `e` or `edit` instead of `nvr`/`nvim`/`vim`/`vi`,
   since the latter are less portable, I added some abbreviations that help. 
   If you dislike this, let me know, and I can add an option to disable them.
