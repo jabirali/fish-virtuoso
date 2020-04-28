@@ -80,3 +80,7 @@ If you're unsure what file to remove, just run `echo $NVIM_LISTEN_ADDRESS`.
 The `nvr` integration is strongly inspired by [this thread][6] on Reddit.
 
 [6]: https://www.reddit.com/r/neovim/comments/aex45u/integrating_nvr_and_tmux_to_use_a_single_tmux_per/
+
+## Related projects
+
+- [Fish-yourutils](https://github.com/jabirali/fish-yourutils)
