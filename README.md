@@ -37,7 +37,7 @@ If you want the following functionality, then this plugin is for you:
 
 This is what you can expect when you use `nvr` + `tmux`:
 
-[![asciicast](https://asciinema.org/a/yqOVwWjHDjexxrN3UhZKh7OE8.svg)](https://asciinema.org/a/yqOVwWjHDjexxrN3UhZKh7OE8)
+[![asciicast](https://asciinema.org/a/325199.svg)](https://asciinema.org/a/325199)
 
 A similar experience can be expected with the built-in terminal `:term` in `nvim`.
 When `nvr` or `nvim` is not available, the plugin falls back to `vim` or `vi`. The
