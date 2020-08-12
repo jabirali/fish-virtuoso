@@ -5,7 +5,12 @@ is backwards-compatible with `vim` and `vi`. It provides extra integration
 when the [Neovim Remote][1] is available, in a way that plays well both
 with the built-in `nvim` terminal and with `tmux`.
 
-Note: this plugin is no longer actively maintained, see [here](#maintenance).
+**Note:** this plugin is no longer actively maintained. For my use, I found
+that the integration of `tmux` and `nvr` — while neat — often just gets in
+the way. For simply choosing the best alternative among several Vim binaries
+(`vi`, `vim`, `nvim`), [fish-abbrfile](https://github.com/jabirali/fish-abbrfile)
+is more general and can do the job just fine. If you still prefer `virtuoso`,
+and would be interested in maintaining it, feel free to contact me.
 
 ## Motivation
 
@@ -76,16 +81,6 @@ This is because the files `~/.cache/nvim/nvr*` used by the `nvim` session
 will not have been cleaned up properly. If this happens, just remove the
 relevant file, e.g. `~/.cache/nvim/nvr$1@2` for `tmux` session 1 window 2.
 If you're unsure what file to remove, just run `echo $NVIM_LISTEN_ADDRESS`.
-
-## Maintenance
-I have decided to not maintain this plugin anymore. For my own uses, I've
-found that I sometimes *want* multiple `nvim` instances per `tmux` window,
-e.g. to separate the sessions where I take MarkDown notes and write code.
-Thus, autocorrecting `nvim` to `nvr` can easily get in the way of my work.
-For simply choosing the best alternative among several Vim implementations,
-I've written a new plugin [fish-prefer](https://github.com/jabirali/fish-prefer),
-which is more general. If you still prefer `virtuoso`, and would be interested
-in maintaining it, feel free to contact me.
 
 ## Acknowledgements 
 
